@@ -1,0 +1,89 @@
+.Product {
+  text-align: center;
+}
+
+.card {
+  height: 30px;
+  width: 100%;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  border: 5px solid #11ff00;
+}
+
+/* ── NAVBAR ── */
+.navbar {
+  background: var(--ivory) !important;
+  border-bottom: 1px solid rgba(200, 145, 59, 0.2);
+  padding: 1.1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(12px);
+  transition: var(--transition);
+}
+.navbar.scrolled {
+  background: rgba(250, 247, 240, 0.95) !important;
+  box-shadow: var(--shadow-sm);
+}
+.navbar-brand {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--espresso) !important;
+  letter-spacing: 0.03em;
+}
+.navbar-brand span {
+  color: var(--gold);
+}
+.nav-link {
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-mid) !important;
+  padding: 0.5rem 1rem !important;
+  transition: var(--transition);
+  position: relative;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 1rem;
+  right: 1rem;
+  height: 1px;
+  background: var(--gold);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+.nav-link:hover::after,
+.nav-link.active::after {
+  transform: scaleX(1);
+}
+.nav-link:hover,
+.nav-link.active {
+  color: var(--espresso) !important;
+}
+
+.cart-icon-wrapper {
+  position: relative;
+  display: inline-block;
+}
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: var(--terracotta);
+  color: white;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  font-size: 0.65rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+/* I be making my stuff on VSCode cuz testing in CodeSandbox lowk weird - Max */

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/gcz0jaf.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+      integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+  </script>
+
+  <!-- Your stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    /* ── Design Tokens ── */
+    :root {
+      --ivory: #faf7f0;
+      --ivory-dark: #f0ebe0;
+      --espresso: #1c1009;
+      --espresso-mid: #3a2415;
+      --gold: #c8913b;
+      --gold-light: #e5bc7a;
+      --terracotta: #c4622d;
+      --blush: #e8d5c4;
+      --white: #ffffff;
+      --text-dark: #1a1109;
+      --text-mid: #5c4a35;
+      --text-light: #9c8b79;
+      --shadow-sm: 0 2px 12px rgba(28, 16, 9, 0.07);
+      --shadow-md: 0 8px 32px rgba(28, 16, 9, 0.12);
+      --shadow-lg: 0 20px 60px rgba(28, 16, 9, 0.18);
+      --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "DM Sans", sans-serif;
+      background: var(--ivory);
+      color: var(--text-dark);
+      overflow-x: hidden;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-family: "Cormorant Garamond", serif;
+      font-weight: 600;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+    }
+    </style>
+
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a
+      class="navbar-brand d-flex align-items-center gap-2"
+      href="index.html"
+    >
+      <span class="brand-icon">✦</span> <span>Samara<span>'s</span></span>
+    </a>
+    <button
+      class="navbar-toggler border-0"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navMenu"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-center gap-1">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="About.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="faq.html">FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Product.html">Products</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+        <li class="nav-item ms-2">
+          <a class="nav-link" href="cart.html">
+            <div class="cart-icon-wrapper">
+              <svg
+                width="22"
+                height="22"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                />
+              </svg>
+              <span class="cart-badge" style="display: none">0</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+<!-- end of navbar -->
+    <!-- header -->
+
+    <section class="custom-hero-header d-flex align-items-center justify-content-center">
+      <div class="container text-center">
+          <h1 class="custom-hero-title">Contact Us.</h1>
+          <p class="custom-hero-subtitle">
+              Our reliable, trusty, and speedy reply time.
+          </p>
+          <span class="display-tag" style="color: var(--espresso-mid)"
+          ></span
+        >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end of header -->
+
+    <!-- contact section -->
+    <section style="padding: 80px 0; background: var(--ivory);">
+      <div class="container">
+        <p style="font-size:1rem; color: var(--text-mid); max-width: 560px; margin-bottom: 3rem; line-height: 1.7;">
+          Need assistance? Contact us using one of the options below, our team is always here to help whenever and whereever.
+        </p>
+        <div class="row g-5">
+
+          <!-- input fierld-->
+          <div class="col-lg-7">
+            <h4 style="font-family:'Cormorant Garamond',serif; font-size:1.6rem; margin-bottom:0.4rem;">Email us</h4>
+            <p style="font-size:0.85rem; color:var(--text-light); margin-bottom:2rem;">Send us an email, and we'll do our best to respond within 48 hours.</p>
+
+            <div class="row g-3 mb-3">
+              <div class="col-sm-6">
+                <label style="font-size:0.8rem; font-weight:500; color:var(--text-mid); display:block; margin-bottom:6px;">Full name</label>
+                <input type="text" placeholder="Name" style="width:100%; padding:12px 16px; border:1px solid rgba(200,145,59,0.25); border-radius:6px; background:var(--white); font-family:'DM Sans',sans-serif; font-size:0.9rem; color:var(--text-dark); outline:none; transition:border-color 0.2s;" onfocus="this.style.borderColor='var(--gold)'" onblur="this.style.borderColor='rgba(200,145,59,0.25)'" />
+              </div>
+              <div class="col-sm-6">
+                <label style="font-size:0.8rem; font-weight:500; color:var(--text-mid); display:block; margin-bottom:6px;">Email us *</label>
+                <input type="email" placeholder="examplejimin@gmail.com" style="width:100%; padding:12px 16px; border:1px solid rgba(200,145,59,0.25); border-radius:6px; background:var(--white); font-family:'DM Sans',sans-serif; font-size:0.9rem; color:var(--text-dark); outline:none; transition:border-color 0.2s;" onfocus="this.style.borderColor='var(--gold)'" onblur="this.style.borderColor='rgba(200,145,59,0.25)'" />
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label style="font-size:0.8rem; font-weight:500; color:var(--text-mid); display:block; margin-bottom:6px;">Contact number</label>
+              <input type="tel" placeholder="777-999-000" style="width:100%; padding:12px 16px; border:1px solid rgba(200,145,59,0.25); border-radius:6px; background:var(--white); font-family:'DM Sans',sans-serif; font-size:0.9rem; color:var(--text-dark); outline:none; transition:border-color 0.2s;" onfocus="this.style.borderColor='var(--gold)'" onblur="this.style.borderColor='rgba(200,145,59,0.25)'" />
+            </div>
+
+            <div class="mb-4">
+              <label style="font-size:0.8rem; font-weight:500; color:var(--text-mid); display:block; margin-bottom:6px;">What's your message? *</label>
+              <textarea placeholder="Your Message Here" rows="6" style="width:100%; padding:12px 16px; border:1px solid rgba(200,145,59,0.25); border-radius:6px; background:var(--white); font-family:'DM Sans',sans-serif; font-size:0.9rem; color:var(--text-dark); outline:none; resize:vertical; transition:border-color 0.2s;" onfocus="this.style.borderColor='var(--gold)'" onblur="this.style.borderColor='rgba(200,145,59,0.25)'"></textarea>
+            </div>
+
+            <button type="button" onclick="handleSubmit()" style="padding:12px 28px; background:var(--terracotta); color:white; border:none; border-radius:6px; font-family:'DM Sans',sans-serif; font-size:0.9rem; font-weight:500; cursor:pointer; transition:background 0.2s;" onmouseover="this.style.background='var(--espresso-mid)'" onmouseout="this.style.background='var(--terracotta)'">
+              Submit Message
+            </button>
+          </div>
+
+          <!-- info-->
+          <div class="col-lg-5">
+            <div style="background:var(--ivory-dark); border:1px solid rgba(200,145,59,0.15); border-radius:12px; padding:2rem; height:100%;">
+              <h4 style="font-family:'Cormorant Garamond',serif; font-size:1.5rem; margin-bottom:1.5rem;">Inquiries</h4>
+
+              <div style="margin-bottom:1.2rem;">
+                <p style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--text-light); margin-bottom:4px;">Emergency helpline</p>
+                <p style="font-size:1.1rem; font-weight:600; color:var(--espresso); margin:0;">(415) 555-0182</p>
+              </div>
+
+              <div style="margin-bottom:1.2rem;">
+                <p style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--text-light); margin-bottom:4px;">Contactable hours</p>
+                <p style="font-size:1rem; font-weight:600; color:var(--espresso); margin:0;">Mon–Sat:  Hours</p>
+              </div>
+
+              <div style="margin-bottom:2rem;">
+                <p style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--text-light); margin-bottom:4px;">Email</p>
+                <p style="font-size:0.95rem; color:var(--gold); margin:0;">hello@samarasshop.com</p>
+              </div>
+
+              <!-- ai-ed map if it doesnt work its not my fault im the birdie-->
+              <div style="border-radius:8px; overflow:hidden; border:1px solid rgba(200,145,59,0.2);">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019!2d-122.4194!3d37.7749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan+Francisco%2C+CA!5e0!3m2!1sen!2sus!4v1"
+                  width="100%" height="200" style="border:0; display:block;" allowfullscreen="" loading="lazy">
+                </iframe>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- end of contact section -->
+    <!-- footer -->
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-4">
+            <div class="footer-brand">Samara<span>'s</span></div>
+            <p class="footer-tagline">
+              Curated finds for the beautifully lived life.
+            </p>
+            <div class="footer-contact-item">
+              <svg
+                width="18"
+                height="18"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+                />
+              </svg>
+              123 Bloom Street, Suite 4A, San Francisco, CA 94102
+            </div>
+            <div class="footer-contact-item">
+              <svg
+                width="18"
+                height="18"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
+                />
+              </svg>
+              (415) 555-0182
+            </div>
+            <div class="footer-contact-item">
+              <svg
+                width="18"
+                height="18"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                />
+              </svg>
+              hello@samarasshop.com
+            </div>
+            <div class="social-links">
+              <a href="#" class="social-link"
+                ><svg
+                  width="14"
+                  height="14"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                  /></svg
+              ></a>
+              <a href="#" class="social-link"
+                ><svg
+                  width="14"
+                  height="14"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                  /></svg
+              ></a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-2">
+            <div class="footer-heading">Quick Links</div>
+            <a href="index.html" class="footer-link">Home</a>
+            <a href="about.html" class="footer-link">About Us</a>
+            <a href="products.html" class="footer-link">Products</a>
+            <a href="cart.html" class="footer-link">My Cart</a>
+            <a href="checkout.html" class="footer-link">Checkout</a>
+            <a href="contact.html" class="footer-link">Contact</a>
+          </div>
+          <div class="col-sm-6 col-lg-2">
+            <div class="footer-heading">Policies</div>
+            <a href="#" class="footer-link">Shipping Info</a>
+            <a href="#" class="footer-link">Returns & Refunds</a>
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="#" class="footer-link">Terms of Service</a>
+          </div>
+          <div class="col-lg-4">
+            <div class="footer-heading">Stay in the Loop</div>
+            <p
+              style="
+                color: rgba(250, 247, 240, 0.6);
+                font-size: 0.9rem;
+                margin-bottom: 1.5rem;
+              "
+            >
+              New arrivals and exclusive offers.
+            </p>
+            <form class="newsletter-form" onsubmit="handleNewsletter(event)">
+              <div class="input-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Your email address"
+                  required
+                />
+                <button class="btn" type="submit">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div
+          class="footer-bottom d-flex justify-content-between flex-wrap gap-2"
+        >
+          <span>&copy; 2025 Samara's Shop. All rights reserved.</span>
+          <span>Designed with care &amp; intention.</span>
+        </div>
+      </div>
+    </footer>
+      <!-- Modal Overlay -->
+    <div id="contactModal" onclick="handleOverlayClick(event)" style="display:none; position:fixed; inset:0; background:rgba(28,16,9,0.55); z-index:9999; align-items:center; justify-content:center;">
+      <div id="modalBox" style="background:var(--white); border-radius:12px; padding:2.5rem 2rem; max-width:420px; width:90%; text-align:center; font-family:'DM Sans',sans-serif;">
+        <div id="modalIcon" style="font-size:2rem; margin-bottom:1rem;"></div>
+        <h3 id="modalTitle" style="font-family:'Cormorant Garamond',serif; font-size:1.6rem; margin-bottom:0.75rem; color:var(--espresso);"></h3>
+        <p id="modalMessage" style="font-size:0.95rem; color:var(--text-mid); line-height:1.6; margin-bottom:1.75rem;"></p>
+        <button onclick="closeModal()" style="padding:10px 28px; background:var(--terracotta); color:white; border:none; border-radius:6px; font-family:'DM Sans',sans-serif; font-size:0.9rem; font-weight:500; cursor:pointer; transition:background 0.2s;" onmouseover="this.style.background='var(--espresso-mid)'" onmouseout="this.style.background='var(--terracotta)'" id="modalBtn"></button>
+      </div>
+    </div>
+
+    <script>
+      function handleSubmit() {
+        const name = document.querySelector('input[placeholder="Name"]').value.trim();
+        const email = document.querySelector('input[type="email"]').value.trim();
+        const phone = document.querySelector('input[type="tel"]').value.trim();
+        const message = document.querySelector('textarea').value.trim();
+    
+        if (!name || !email || !phone || !message) {
+          showModal(
+            '✦',
+            'Whoops!',
+            'You missed one! All input fields must be filled out to send a message!',
+            'Got it!'
+          );
+        } else {
+          showModal(
+            '✉',
+            'Message received!',
+            'Thanks, we got your message! Please wait patiently for a reply back in the next 24 hours. See you soon!',
+            'Ok!'
+          );
+        }
+      }
+    
+      function showModal(icon, title, message, btnText) {
+        document.getElementById('modalIcon').textContent = icon;
+        document.getElementById('modalTitle').textContent = title;
+        document.getElementById('modalMessage').textContent = message;
+        document.getElementById('modalBtn').textContent = btnText;
+        const modal = document.getElementById('contactModal');
+        modal.style.display = 'flex';
+      }
+    
+      function closeModal() {
+        document.getElementById('contactModal').style.display = 'none';
+      }
+    
+      function handleOverlayClick(e) {
+        if (e.target.id === 'contactModal') closeModal();
+      }
+    </script>
+
+  </body>
+</html>
